@@ -1,0 +1,78 @@
+﻿<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>常用站点</title>
+<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="newtab.js"></script>
+<style type="text/css">
+.site {
+	display: inline-block;
+	width: 5em;
+	height: 5em;
+	border: 1px solid #ccc;
+	padding: 0.5em;
+	margin: 0.5em;
+}
+
+.site .icon {
+	height: 4em;
+	padding: 0 0.5em;
+}
+
+.site .title {
+	height: 1em;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	line-height: 1em;
+	text-align: center;
+	padding: 2px 0;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+body {
+	width: 800px;
+	height: 480px;
+	margin: 0 auto;
+	padding: 5em 10em;
+}
+
+.panel {
+	font-size: 12px;
+	padding: 1em;
+	margin: 2em;
+}
+
+#title {
+	text-align: center;
+}
+
+#panel {
+	border: 1px solid #ccc;
+}
+</style>
+</head>
+<body>
+	<div id="title" class="panel">
+		<span style="font-size: 36px;">常用站点</span>
+	</div>
+	<div id="panel" class="panel"></div>
+	<div id="footer" class="panel"></div>
+	<div class="template" style="display:none;">
+
+		<div id="siteTemp">
+			<a href="#url#" target="_blank">
+				<div class="site" data-id="#id#" data-parentId="#parentId#" title="#title#">
+					<img class="icon" alt="#title#" src="#icon#">
+					<div class="title" title="#title#">#title#</div>
+				</div>
+			</a>
+		</div>
+
+	</div>
+</body>
+</html>
