@@ -47,10 +47,6 @@
 			margin: 2em;
 		}
 		
-		#title {
-			text-align: center;
-		}
-		
 		.siteSet {
 			border: 1px solid #ccc;
 			margin-bottom: 2em;
@@ -60,13 +56,38 @@
 			padding: 2px 10px;
 			font-size: 1.5em;
 		}
+		
+		#searcher {
+			padding: 0.5em;
+		}
+		#searcher * {
+			float: left;
+		}
+		
+		.engName {
+			font-size: 1.5em;
+			padding-right: 1em;
+			width: 6em;
+			text-align: right;
+		}
+		
+		.keywords {
+			width: 35em;
+			padding: 0.5em;
+		}
+		
+		#search {
+			padding: 0.4em 2em;
+			position: relative;
+			left: -1px;
+		}
 	</style>
 </head>
 
 <body>
 	<div id="title" class="panel">
 		<form id="searcher" action="http://www.baidu.com/s">
-			<span>百度：</span>
+			<span class="engName">百度搜索</span>
 			<input name="wd" class="keywords" id="key" type="text" maxlength="100">
 			<input id="search" class="btn search" type="button" value="搜索">
 		</form>
