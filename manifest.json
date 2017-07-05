@@ -1,7 +1,7 @@
 ﻿{
 "name": "BMarks",
 "version": "0.1",
-"description": "我的首页",
+"description": "在新建标签页时显示我的书签",
 "chrome_url_overrides" : {
     "newtab": "newtab.html"
   },
