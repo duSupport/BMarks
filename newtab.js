@@ -35,6 +35,7 @@ function readBooks() {
         });
     };
     bookmarks.search("favorites", function (items) {
+    	if (items == null || items.length == 0) return;
         box = items[0];
         if (box == null) { return; }
         box.title = "常用站点";
@@ -81,10 +82,10 @@ function getIconUrl(url) {
     return iconUrl;
 }
 $(function () {
-    readBooks();
-    $("#search").bind("click", function () {
-        $("#searcher").submit();
-    });
+	readBooks();
+	$("#search").bind("click", function () {
+		$("#searcher").submit();
+	});
 
 
 });
