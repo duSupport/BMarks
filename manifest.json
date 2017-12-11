@@ -1,12 +1,13 @@
 ﻿{
-"name": "BMarks",
-"version": "0.1",
-"description": "在新建标签页时显示我的书签",
-"chrome_url_overrides" : {
+  "name": "BMarks",
+  "version": "0.1.2",
+  "author": "dev.do@outlook.com",
+  "description": "在新建标签页时显示我的书签",
+  "chrome_url_overrides": {
     "newtab": "newtab.html"
   },
-"manifest_version":2,
-"permissions": [
+  "manifest_version": 2,
+  "permissions": [
     "bookmarks"
   ]
 }

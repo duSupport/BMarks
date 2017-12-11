@@ -36,6 +36,7 @@ function readBooks() {
     };
     bookmarks.search("favorites", function (items) {
         box = items[0];
+        if (box == null) { return; }
         box.title = "常用站点";
         createSite(box);
         bookmarks.getChildren(box.id, function (children) {
